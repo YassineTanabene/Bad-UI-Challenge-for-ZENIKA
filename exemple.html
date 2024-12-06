@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mauvaise Interface - Corps Humain & Océan</title>
+    <link id="theme-stylesheet" rel="stylesheet" href="styles-light.css">
+</head>
+<body>
+    <header>
+        <h1>L'Océan est un Corps Humain !</h1>
+        <nav>
+            <ul>
+                <li><a href="#coeur">Le Cœur comme un Récif Corallien ?</a></li>
+                <li><a href="#poumons">Les Poumons comme des Vagues ?</a></li>
+                <li><a href="#estomac">L'Estomac comme un Tourbillon ?</a></li>
+            </ul>
+        </nav>
+        <button onclick="changeStylesheet()">Changer les Styles</button>
+    </header>
+    <main>
+        <section id="coeur">
+            <h2>Le Cœur & le Récif Corallien</h2>
+            <img src="https://t3.ftcdn.net/jpg/02/13/84/28/360_F_213842853_TlWf0duFcikBrjeNmj1rfGEJ6M6mT7rm.jpg" alt="Récif corallien">
+            <p style="font-size: 10px;">Les récifs coralliens sont comme le cœur humain car ils pompent la vie dans l'océan, en quelque sorte.</p>
+            <div id="coeurimg">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_XWhjS1C75mBpQ1eH5LoA_JqeDvb-pKquNQ&s" style="transform: rotate(180deg);" alt="Récif corallien inversé">
+            </div>
+        </section>
+        <section id="poumons">
+            <h2>Les Poumons & les Vagues</h2>
+            <p style="background: rgb(242, 0, 255);">Les poumons respirent de l'air, les vagues respirent de l'eau, et c'est pratiquement pareil, non ?</p>
+            <img src="https://www.shutterstock.com/image-vector/human-lungs-realistic-anatomical-model-600w-2404350543.jpg" alt="Poumons humains">
+            <button onclick="alert('       ************\n     **********\n*******\n****\n*************')">Cliquez pour voir des vagues !</button>
+        </section>
+        <section id="estomac">
+            <h2>L'Estomac & le <span>Tourbillon</span></h2>
+            <p id="spinner" style="letter-spacing: 0.5em; color: darkblue;">Digérer de la nourriture, avaler des poissons. La même chose !</p>
+        </section>
+    </main>
+    
+    <script>
+        function changeStylesheet() {
+            var stylesheet = document.getElementById('theme-stylesheet');
+            if (stylesheet.getAttribute('href') === 'styles-light.css') {
+                stylesheet.setAttribute('href', 'styles.css');
+            } else {
+                stylesheet.setAttribute('href', 'styles-light.css'); 
+            }
+        }
+    </script>
+</body>
+</html>
